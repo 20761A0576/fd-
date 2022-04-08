@@ -1,0 +1,16 @@
+procedure:
+
+1.Load or register a jdbc driver.
+
+Oracle Driver is reequired 
+to work with JDBC driver we require ojdbc14.jar file
+
+--> to set class path then use following syntax in command prompt
+	set classpath=%classpath%;.;ojdbc14.jar
+
+2.establish a connection
+	to establish a connection we required a DriverManager class
+	Syntax::
+		DriverManager.getConnection(String url,String username,String password);
+
+	url::jdbc:oracle:thin:@hostname(location of database):port(1521):servicename(oralbrce)
